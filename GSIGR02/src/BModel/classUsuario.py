@@ -1,6 +1,5 @@
 class Usuario:
-
-    def __init__(self,nick,contrasenia,nacimiento):
-        self.nick=nick
-        self.contrasenia=contrasenia
-        self.nacimiento=nacimiento
+    def __init__(self, nick, password, nacimiento):
+        self.nick = nick
+        self.password = password
+        self.birth = nacimiento
