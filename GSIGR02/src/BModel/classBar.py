@@ -1,4 +1,4 @@
-from .classLocal import Local
+from src.BModel.classLocal import Local
 
 
 class Bar(Local):

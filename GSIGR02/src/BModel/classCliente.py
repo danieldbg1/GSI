@@ -1,4 +1,4 @@
-from .classUsuario import Usuario
+from src.BModel.classUsuario import Usuario
 
 
 class Cliente(Usuario):

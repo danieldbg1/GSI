@@ -1,6 +1,6 @@
+from src.BModel import *
 import datetime
-from BModel import *
-from BSystem import DB
+from src.BSystem import DB
 
 # USUARIOS
 unDueno = Dueno('dueno_prueba','password0',datetime.date(year=1982,month=3,day=22))
