@@ -18,5 +18,5 @@ class Direccion:
             self.codigo_postal = str(codigo_postal)
 
     def __str__(self):
-        return self.calle + " " + str(self.numero) + " " + str(self.codigo_postal) + " " + self.ciudad + \
-               " (" + self.provincia + ")"
+        return str(self.calle) + " " + str(self.numero) + " " + str(self.codigo_postal) + " " + str(self.ciudad) + \
+               " (" + str(self.provincia) + ")"

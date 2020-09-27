@@ -10,8 +10,8 @@ unMenor = Cliente('cli_pru2','password2',datetime.date(year=2005,month=12,day=22
 #LOCALES
 # bar_dir = Direccion('Navarra', 'Pamplona', 'c/ Nueva', 13, 31001) # DEBE ADMITIR AMBOS FORMATOS
 bar_dir = Direccion('c/Nueva 13 31001 Pamplona (Navarra)')
-
-unBar = Bar('Mesón Random', bar_dir.__str__, [unDueno.Nick],
+stringDireccion=bar_dir.__str__()
+unBar = Bar('Mesón Random', stringDireccion, [unDueno.Nick],
             'pequeño bar de tapas', aforo_total=10, tags='tags')
 unRestaurante = Restaurante('Don Random', 'c/Vieja 3 31021 Pamplona (Navarra)',
                             [unDueno.Nick],'pequeño ristorante italiano',

@@ -1,4 +1,4 @@
-from src.BModel.classLocal import Local
+from .classLocal import Local
 
 
 class Pub(Local):

@@ -1,4 +1,4 @@
-from src.BModel.classDireccion import Direccion
+from .classDireccion import Direccion
 
 
 class Local:
