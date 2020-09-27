@@ -172,6 +172,7 @@
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1601056993015" />
     <state x="651" y="172" key="FileChooserDialogImpl/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1601226405932" />
+<<<<<<< Updated upstream
     <state width="1899" height="285" key="GridCell.Tab.0.bottom" timestamp="1601227731874">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -193,21 +194,44 @@
     <state width="1345" height="171" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601057481751" />
     <state width="1899" height="285" key="GridCell.Tab.0.right/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1601227731874" />
     <state width="1899" height="398" key="GridCell.Tab.1.bottom" timestamp="1601227170913">
+=======
+    <state width="1899" height="398" key="GridCell.Tab.0.bottom" timestamp="1601230192306">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="398" key="GridCell.Tab.1.bottom/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1601227170913" />
-    <state width="1899" height="398" key="GridCell.Tab.1.center" timestamp="1601227170913">
+    <state width="1345" height="171" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601057481751" />
+    <state width="1899" height="398" key="GridCell.Tab.0.bottom/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1601230192306" />
+    <state width="1899" height="398" key="GridCell.Tab.0.center" timestamp="1601230192306">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="398" key="GridCell.Tab.1.center/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1601227170913" />
-    <state width="1899" height="398" key="GridCell.Tab.1.left" timestamp="1601227170913">
+    <state width="1345" height="171" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601057481751" />
+    <state width="1899" height="398" key="GridCell.Tab.0.center/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1601230192306" />
+    <state width="1899" height="398" key="GridCell.Tab.0.left" timestamp="1601230192306">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="398" key="GridCell.Tab.1.left/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1601227170913" />
-    <state width="1899" height="398" key="GridCell.Tab.1.right" timestamp="1601227170913">
+    <state width="1345" height="171" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601057481751" />
+    <state width="1899" height="398" key="GridCell.Tab.0.left/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1601230192306" />
+    <state width="1899" height="398" key="GridCell.Tab.0.right" timestamp="1601230192306">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="398" key="GridCell.Tab.1.right/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1601227170913" />
+    <state width="1345" height="171" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601057481751" />
+    <state width="1899" height="398" key="GridCell.Tab.0.right/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1601230192306" />
+    <state width="1899" height="398" key="GridCell.Tab.1.bottom" timestamp="1601230192306">
+>>>>>>> Stashed changes
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="398" key="GridCell.Tab.1.bottom/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1601230192306" />
+    <state width="1899" height="398" key="GridCell.Tab.1.center" timestamp="1601230192306">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="398" key="GridCell.Tab.1.center/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1601230192306" />
+    <state width="1899" height="398" key="GridCell.Tab.1.left" timestamp="1601230192306">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="398" key="GridCell.Tab.1.left/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1601230192306" />
+    <state width="1899" height="398" key="GridCell.Tab.1.right" timestamp="1601230192306">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="398" key="GridCell.Tab.1.right/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1601230192306" />
     <state x="803" y="310" key="refactoring.ChangeSignatureDialog" timestamp="1601227683047">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -227,8 +251,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/BSystem/classDB.py</url>
+<<<<<<< Updated upstream
           <line>184</line>
+=======
+          <line>191</line>
+>>>>>>> Stashed changes
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/BModel/classDireccion.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

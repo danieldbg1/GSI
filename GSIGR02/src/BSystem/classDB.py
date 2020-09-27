@@ -23,9 +23,11 @@ class DB:
         self.Contestacion = {}
 
     def append(self, objeto):
+
         if isinstance(objeto, Direccion):
             i = len(self.Direcciones)
             self.Direcciones[i] = objeto.__str__()
+
         elif isinstance(objeto, Dueno):
             nick = objeto.Nick
             today = datetime.date.today()
@@ -39,6 +41,7 @@ class DB:
             else:
                 self.Usuarios['Dueno'][nick] = objeto
                 print("Dueno creado")
+
         elif isinstance(objeto, Cliente):
             nick = objeto.Nick
             today = datetime.date.today()
@@ -52,6 +55,7 @@ class DB:
             else:
                 self.Usuarios['Cliente'][nick] = objeto
                 print("Cliente creado")
+
         elif isinstance(objeto, Bar):
             if not hasattr(objeto, 'nombre'):
                 print("Bar no instanciado")
@@ -68,6 +72,7 @@ class DB:
                 self.append(dir)
                 self.Locales['Bar'][nombre] = objeto
                 print("Bar añadido")
+
         elif isinstance(objeto, Restaurante):
             if not hasattr(objeto, 'nombre'):
                 print("Restaurante no instanciado")
@@ -84,6 +89,7 @@ class DB:
                 self.append(dir)
                 self.Locales['Restaurante'][nombre] = objeto
                 print("restaurante añadido")
+
         elif isinstance(objeto, Pub):
             if not hasattr(objeto, 'nombre'):
                 print("Pub no instanciado")
@@ -100,6 +106,7 @@ class DB:
                 self.append(dir)
                 self.Locales['Pub'][nombre] = objeto
                 print("Pub añadido")
+
         elif isinstance(objeto, Reserva):
             cliente = objeto.cliente
             if self.findCliente(cliente.Nick) is None:
@@ -118,6 +125,7 @@ class DB:
                     return None
                 self.Reserva['Restaurante'] = objeto
                 print("Reserva restaurante creada")
+
         elif isinstance(objeto, Review):
             local = objeto.bar
             if isinstance(local, Bar):
@@ -141,6 +149,7 @@ class DB:
                      return None
                  self.Review['Pub'][key] = objeto
                  print("Review creada")
+
         elif isinstance(objeto, Contestacion):
             review = objeto.review
             keyreview = (review.cliente.Nick,review.fecha)

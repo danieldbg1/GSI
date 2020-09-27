@@ -8,7 +8,7 @@ unCliente = Cliente('cli_pru','password1',datetime.date(year=1992,month=12,day=2
 unMenor = Cliente('cli_pru2','password2',datetime.date(year=2005,month=12,day=22))
 
 #LOCALES
-# bar_dir = Direccion('Navarra', 'Pamplona', 'c/ Nueva', 13, 31001) # DEBE ADMITIR AMBOS FORMATOS
+#bar_dir = Direccion('Navarra', 'Pamplona', 'c/Nueva', 13, 31001) # DEBE ADMITIR AMBOS FORMATOS
 bar_dir = Direccion('c/Nueva 13 31001 Pamplona (Navarra)')
 stringDireccion=bar_dir.__str__()
 unBar = Bar('Mesón Random', stringDireccion, [unDueno.Nick],
@@ -27,8 +27,8 @@ unaReserva = Reserva(unCliente, unBar,'2020/03/12','21:45',0.2)
 comentario = 'No estuvo nada mal. El servicio perfecto. Quizás faltó una música más relajada.'
 comentario2 = comentario * 25
 unaReview = Review(unCliente,unBar,'17/02/2020',3.5,comentario)
-# unaReview = Review(unCliente,unBar,'17/02/2020',3.5,comentario2) # debe NOTIFICAR -> MUCHO TEXTO
-# unaReview = Review(unCliente,unBar,'17/02/2020',3.5,comentario2) # debe NOTIFICAR -> NO SE PUEDE VALORAR X2
+#unaReview = Review(unCliente,unBar,'17/02/2020',3.5,comentario2) # debe NOTIFICAR -> MUCHO TEXTO
+#unaReview = Review(unCliente,unBar,'17/02/2020',3.5,comentario2) # debe NOTIFICAR -> NO SE PUEDE VALORAR X2
 
 #CONTESTACION
 contestacion = 'Lamentamos que la música no fuese del gusto...'
