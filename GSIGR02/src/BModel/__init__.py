@@ -8,3 +8,5 @@ from .classReserva import Reserva
 from .classReview import Review
 from .classConstestacion import Contestacion
 from .classUsuario import Usuario
+from .classDueno import Dueno
+
