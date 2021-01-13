@@ -18,7 +18,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WebReservas" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GSIGR02" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
@@ -56,10 +56,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1610536187577">
+    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1610538460058">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="280" key="FileChooserDialogImpl/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1610536187577" />
+    <state x="740" y="280" key="FileChooserDialogImpl/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1610538460058" />
     <state width="1899" height="352" key="GridCell.Tab.0.bottom" timestamp="1610469674264">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -96,6 +96,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="170" key="SettingsEditor/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1610467991093" />
+    <state x="1086" y="215" width="570" height="545" key="StructurePopup" timestamp="1610540895402">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1086" y="215" width="570" height="545" key="StructurePopup/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1610540895402" />
     <state x="667" y="258" width="585" height="534" key="find.popup" timestamp="1610468765478">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

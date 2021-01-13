@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.exceptions import ValidationError
 
 # Create your models here.
 
@@ -17,7 +18,7 @@ class Local(models.Model):
     nombre = models.CharField(max_length=200)
     descripcion = models.CharField(max_length=200)
     direccion = models.OneToOneField(Direccion, on_delete=models.CASCADE)
-    duenos=models.ManyToManyField('self',through='Dueno', symmetrical=False)
+    duenos=models.ManyToManyField('self',through='Dueno', symmetrical=True)
     def __str__(self):
         return self.nombre
 
@@ -56,3 +57,30 @@ class Cliente(Usuario):
 
 class Dueno(Usuario):
     locales = models.ManyToManyField(Local)
+
+class Review(models.Model):
+    cliente = models.OneToOneField(Cliente, on_delete=models.CASCADE)
+    local = models.OneToOneField(Local, on_delete=models.CASCADE)
+    fecha = models.DateTimeField(auto_now_add=True)
+    comentario = models.CharField(max_length=500)
+    valoracion = models.PositiveSmallIntegerField()
+
+    def clean(self):
+        if self.valoracion > 5:
+            raise ValidationError("La valoracion es mayor que 5")
+
+    def __str__(self):
+        return self.cliente.__str__() + ", " + self.local.__str__() + ", " + str(self.fecha) + ", " \
+               + str(self.valoracion) + ", " + self.comentario
+
+
+class Reserva(models.Model):
+    cliente = models.OneToOneField(Cliente, on_delete=models.CASCADE)
+    local = models.OneToOneField(Local, on_delete=models.CASCADE)
+    fecha = models.DateTimeField("Fecha de la reserva")
+    hora = models.TimeField("Hora de la reserva")
+    descuento = models.PositiveSmallIntegerField(default=0)
+
+    def __str__(self):
+        return self.cliente.__str__() + ", " + self.local.__str__() + ", " + \
+               str(self.fecha) + ", " + str(self.hora) + ", " + str(self.descuento)
