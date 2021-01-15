@@ -8,12 +8,13 @@
 <body>
     <div class="login">
         <h1>Login</h1>
-        <form method='POST'>{% csrf_token %}
-            <input type="text" name="Usuario" placeholder="Usuario" required="required" />
-            <input type="password" name="Contraseña" placeholder="Contraseña" required="required" />
-            <button type="submit" class="btn btn-primary btn-block btn-large">Login.</button>
+        <form action='validate_login' method='POST'>{% csrf_token %}
+            <input type="text" name="username" id="username" placeholder="Usuario" required="required" />
+            <input type="password" name="password" id="password" placeholder="Contraseña" required="required" />
+            <button type="submit">Login.</button>
             <p>¿No estás registrado?   <a href="crear_direccion">Registrar</a></p>
         </form>
     </div>
+
 </body>
 </html>
