@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear direccion</title>
+</head>
+<body>
+<h2>Paso 1 de 2 para registrarse</h2>
+<form action='crear_direccion' method='POST'>{% csrf_token %}
+    <h3>Crea tu direccion</h3>
+    {{ form.as_p }}
+    <input type='submit' value='Save' />
+</form>
+
+</body>
+</html>

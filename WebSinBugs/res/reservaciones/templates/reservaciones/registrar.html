@@ -5,10 +5,13 @@
     <title>Registrar</title>
 </head>
 <body>
+<h2>Paso 2 de 2 para registrarse</h2>
 <form action='registrar' method='POST'>{% csrf_token %}
+    <h3>Crea tu usuario</h3>
     {{ form.as_p }}
     <input type='submit' value='Save' />
 </form>
 
+    <h4>Si no se muestra el formulario, pulse SAVE. </h4>
 </body>
 </html>
