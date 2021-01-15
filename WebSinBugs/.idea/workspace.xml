@@ -18,7 +18,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GSIGR02" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Escritorio/Dani/upna/GSI/GSI-master1/GSI-master/WebSinBugs" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
@@ -56,9 +56,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1610711178665">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="493" y="262" key="FileChooserDialogImpl" timestamp="1610716667597">
+      <screen x="0" y="0" width="1280" height="984" />
     </state>
+    <state x="493" y="262" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1610716667597" />
     <state x="740" y="280" key="FileChooserDialogImpl/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1610711178665" />
     <state width="1899" height="352" key="GridCell.Tab.0.bottom" timestamp="1610469674264">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -104,16 +105,5 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="534" key="find.popup/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1610468765478" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/res/reservaciones/views.py</url>
-          <line>6</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
