@@ -1,6 +1,5 @@
 from django.contrib import admin
-from .models import Direccion,Bar,Restaurante,Pub,Cliente,Dueno,Review,Reserva
-# Register your models here.
+from .models import Direccion,Bar,Restaurante,Pub,Cliente,Dueno,Review,Reserva,Contestacion
 admin.site.register(Direccion)
 admin.site.register(Bar)
 admin.site.register(Restaurante)
@@ -9,3 +8,4 @@ admin.site.register(Cliente)
 admin.site.register(Dueno)
 admin.site.register(Review)
 admin.site.register(Reserva)
+admin.site.register(Contestacion)

@@ -16,11 +16,14 @@ class Direccion(models.Model):
 
 class Local(models.Model):
     nombre = models.CharField(max_length=200)
-    descripcion = models.CharField(max_length=200)
+    descripcion = models.CharField(max_length=300)
     direccion = models.OneToOneField(Direccion, on_delete=models.CASCADE)
-    duenos=models.ManyToManyField('self',through='Dueno', symmetrical=True)
+    #duenos=models.ManyToManyField('self',through='Dueno', symmetrical=True)
     def __str__(self):
         return self.nombre
+
+    #def clean(self):
+        #print(self.duenos)
 
     class Meta:
         abstract=False
@@ -63,11 +66,15 @@ class Review(models.Model):
     local = models.OneToOneField(Local, on_delete=models.CASCADE)
     fecha = models.DateTimeField(auto_now_add=True)
     comentario = models.CharField(max_length=500)
-    valoracion = models.PositiveSmallIntegerField()
+    POSIBLES_VALORACIONES = [
+        (1, "1"),
+        (2, "2"),
+        (3, "3"),
+        (4, "4"),
+        (5, "5")
+    ]
+    valoracion = models.PositiveSmallIntegerField(choices=POSIBLES_VALORACIONES)
 
-    def clean(self):
-        if self.valoracion > 5:
-            raise ValidationError("La valoracion es mayor que 5")
 
     def __str__(self):
         return self.cliente.__str__() + ", " + self.local.__str__() + ", " + str(self.fecha) + ", " \
@@ -84,3 +91,11 @@ class Reserva(models.Model):
     def __str__(self):
         return self.cliente.__str__() + ", " + self.local.__str__() + ", " + \
                str(self.fecha) + ", " + str(self.hora) + ", " + str(self.descuento)
+
+class Contestacion(models.Model):
+    review = models.OneToOneField(Review, on_delete=models.CASCADE)
+    dueno = models.OneToOneField(Dueno, on_delete=models.CASCADE)
+    contestacion = models.CharField(max_length=500)
+
+    def __str__(self):
+        return self.review.__str__() + ", " + self.dueno.__str__() + ", " + self.contestacion
