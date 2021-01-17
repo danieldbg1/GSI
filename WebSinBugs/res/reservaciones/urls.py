@@ -1,6 +1,5 @@
 from django.urls import path
 from .import views
-from django.contrib.auth.views import LoginView, LogoutView
 
 urlpatterns = [
     path('', views.index, name='index'),
@@ -11,4 +10,10 @@ urlpatterns = [
     path('user/ok', views.ok, name='user'),
     path('user/crear_direccion', views.crear_direccion, name='user'),
     path('user/lista_locales', views.lista_locales, name='user'),
+    path('user/reservar', views.reservar, name='user'),
+    path('user/ok_reserva', views.ok_reserva, name='user'),
+    path('user/mal_reserva', views.mal_reserva, name='user'),
+    path('user/ok_review', views.ok_review, name='user'),
+    path('user/mal_review', views.mal_review, name='user'),
+    path('user/review', views.review, name='user'),
 ]

@@ -8,13 +8,16 @@
     {% if lista %}
         <ul>
         {% for local in lista %}
-            <li>debug</li>
-            <li><a href="/reservaciones/{{ local.id }}/">{{ local.nombre }}</a></li>
+            <li>{{ local.nombre }}</li>
+            <a href='reservar?local={{ local.id }}'>Reservar </a>&nbsp&nbsp&nbsp
+            <a href='review?local={{ local.id }}'>Poner una reseña </a><br>
+            <p></p>
         {% endfor %}
         </ul>
     {% else %}
         <p>No hay locales.</p>
     {% endif %}
+
     <a href="logout">Logout</a>
 
 </body>
