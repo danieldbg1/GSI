@@ -5,7 +5,7 @@ from django.template import loader
 from .forms import Form_registrar, Form_direccion
 from django.contrib.auth import authenticate, login
 from django.contrib.auth import logout as do_logout
-from .models import Cliente
+from .models import Cliente,Local
 
 
 def index(request):
@@ -50,7 +50,11 @@ def crear_direccion(request):
 
 
 def lista_locales(request):
-    return render(request, 'reservaciones/lista_locales.html')
+    lista=Local.objects.order_by('nombre')
+    context = {
+        'lista': lista,
+    }
+    return render(request, 'reservaciones/lista_locales.html',context)
 
 def ok(request):
     return render(request, "reservaciones/ok.html")

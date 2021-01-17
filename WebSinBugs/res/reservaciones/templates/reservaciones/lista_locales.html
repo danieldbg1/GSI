@@ -5,7 +5,16 @@
     <title>Lista locales</title>
 </head>
 <body>
-    Lista locales
+    {% if lista %}
+        <ul>
+        {% for local in lista %}
+            <li>debug</li>
+            <li><a href="/reservaciones/{{ local.id }}/">{{ local.nombre }}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No hay locales.</p>
+    {% endif %}
     <a href="logout">Logout</a>
 
 </body>
